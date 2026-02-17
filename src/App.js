@@ -8,6 +8,18 @@ import WPAdmin from './components/WPAdmin';
 import Plugins from './components/Plugins';
 import DevControls from './components/DevControls';
 
+
+
+import Drives from './components/Drives';
+import Config from './components/Config';
+import Ghost from './components/Ghost';
+import Hosting from './components/Hosting';
+import DNS from './components/DNS';
+import Builder from './components/Builder';
+import Social from './components/Social';
+import AutoRepair from './components/AutoRepair';
+import PersonaVoice from './components/PersonaVoice';
+import GlobalHeatmap from './components/GlobalHeatmap';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -71,6 +83,20 @@ function App() {
         {activeSection === 'plugins' && <Plugins plugins={plugins} />}
         {activeSection === 'dev' && <DevControls />}
         {/* Add more sections as needed */}
+
+
+{activeSection === 'drives' && <Drives />}
+{activeSection === 'config' && <Config />}
+{activeSection === 'ghost' && <Ghost />}
+{activeSection === 'hosting' && <Hosting />}
+{activeSection === 'dns' && <DNS />}
+{activeSection === 'builder' && <Builder />}
+{activeSection === 'social' && <Social />}
+{activeSection === 'autorepair' && <AutoRepair />}
+{activeSection === 'personavoice' && <PersonaVoice />}
+{activeSection === 'heatmap' && <GlobalHeatmap />}
+
+  
       </main>
     </div>
   );
