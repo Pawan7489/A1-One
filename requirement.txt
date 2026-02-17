@@ -1,0 +1,29 @@
+A1 CORE ENGINE Requirements
+
+1. Node.js Version: 16 or higher (for building React app)
+2. Python Version: 3.8 or higher
+3. Python Packages (install with pip install -r requirements.txt):
+   - flask==2.3.3
+4. NPM Packages (npm install):
+   - react: ^18.0.0
+   - react-dom: ^18.0.0
+   - tailwindcss: ^3.0.0
+   - lucide-react: ^0.0.0
+5. Build Steps:
+   - npm run build (creates build folder)
+6. Local Run Steps (Python):
+   - pip install flask
+   - python app.py (runs on http://localhost:5000)
+7. Deploy Steps (Render Python Web Service):
+   - Upload code to GitHub.
+   - Render mein "New Web Service" select karo, Python environment.
+   - Build Command: pip install -r requirements.txt && npm install && npm run build
+   - Start Command: python app.py
+   - Environment Variable: PORT (Render auto-set karega)
+8. Notes:
+   - Yeh Python Flask app static React files serve karega.
+   - Agar static deploy better lage, toh pehle wala use karo.
+   - Free hosting: Render Python tier.
+   - If errors: Check Flask logs on Render.
+
+Created for A1 CORE ENGINE - Futuristic AI Control Panel.
