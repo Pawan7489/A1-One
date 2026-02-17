@@ -9,7 +9,6 @@ import Plugins from './components/Plugins';
 import DevControls from './components/DevControls';
 
 
-
 import Drives from './components/Drives';
 import Config from './components/Config';
 import Ghost from './components/Ghost';
@@ -20,6 +19,8 @@ import Social from './components/Social';
 import AutoRepair from './components/AutoRepair';
 import PersonaVoice from './components/PersonaVoice';
 import GlobalHeatmap from './components/GlobalHeatmap';
+import './styles.css';  // Yeh add karo CSS ke liye
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
